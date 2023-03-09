@@ -1,0 +1,28 @@
+1.  Jiho is having a lot of success with our restaurant application.
+    Unfortunately, our original design did not account for storing orders for each specific table. Jiho asked us to adjust our application to be able to store the orders that come in for each specific table and also be able to print out the order for the kitchen staff.
+
+    Take some time to review the adjusted structure of the program we created earlier. Note that tables is now dictionary with the table numbers as the keys. It also accounts for a new property called order. The assign_table function has also been adjusted to account for the changes.
+
+    Run the code to move onto the next checkpoint.
+
+2.  To help Jiho implement the ability to store the order in a specific
+    table, let’s define a function called assign_and_print_order().
+
+    The function should have two parameters called table_number and order_items. The parameter of order_items should be grouped with an unpacking operator (\*) so we can capture a variable number of order items per table.
+
+    For now, our program will error out if we run it. Don’t worry we will fill in the function in the next step!
+
+3.  Our function assign_and_print_order() should then assign an order to
+    a table. Inside of our function, access the nested order key for the specific table (using the table_number argument) from tables and set it to the order_items parameter.
+
+4.  In addition to assigning the order to our tables dictionary, we also want to print every ordered item so the kitchen knows what to cook!
+
+    Inside of assign_and_print_order() use a for loop to iterate through order_items and print each individual order item.
+
+5.  Lastly, let’s see our function in action. Luckily we just had a new
+    customer come in for their reservation. Use the assign_table() function to add a new customer named 'Arwa' to table 2 with a VIP status set to True.
+
+6.    Now that Arwa is seated and ready to order, call our 
+      assign_and_print_order() function for table 2 with the order items of 'Steak', 'Seabass', and 'Wine Bottle'.
+
+      Print tables to see the result!
