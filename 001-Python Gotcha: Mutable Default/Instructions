@@ -1,0 +1,5 @@
+1 - Jiho needs a way to assign new customers to the existing tables as they come in for their reservations. Define a new function called assign_table that will take three arguments (in this exact order):
+    table_number
+    name
+    vip_status
+    Our function assign_table should then use the following arguments to assign a new customer to a table in our dictionary tables. Use the table_number as the key and a list containing name and vip_status as the value.
