@@ -1,0 +1,17 @@
+1.
+    Let’s start by defining a function called single_prix_fixe_order() which will define four parameters to accept the full order:
+
+    A parameter named appetizer
+    A parameter named entrees paired with a * operator
+    A parameter named sides
+    A parameter named dessert_scoops paired with a ** operator
+    Our function should simply have four print() statements that print each individual parameter.
+
+2.
+    We got our first prix fixe order in! The customer wants the following:
+
+    'Baby Beets' as an appetizer
+    'Salmon' and 'Scallops' as entrees
+    'Mashed Potatoes' as a side
+    A scoop of 'Vanilla' ice cream and a scoop of 'Cookies and Cream' for dessert
+    Utilize our function single_prix_fixe_order() to print out all of the customers order.
