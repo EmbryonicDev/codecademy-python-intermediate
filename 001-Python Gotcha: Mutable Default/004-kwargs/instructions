@@ -1,0 +1,16 @@
+1.
+    Since our program now requires a distinction between food items and drinks, this is a great place to utilize the power of **kwargs.
+
+    Define a function called assign_food_items() that has one parameter, order_items. Pair this parameter with a ** operator to handle any keyword arguments.
+
+    For now, just have the function print order_items.
+
+2.
+    Now we want to capture the food items and drinks in order_items. Use the .get() method to do the following:
+
+    Capture the values from a keyword argument called food and assign it to a variable called food
+    Capture the values from a keyword argument called drinks and assign it to a variable called drinks
+    Refer to the commented example call at the bottom of the script for a reference on how we will call this function later on.
+
+3.
+    Lastly, inside of our function use print() to output the food variable and another print() to output the drinks variable.
