@@ -18,7 +18,13 @@ print(tables)
 
 
 # Write your code below:
+def assign_food_items(**order_items):
+    food = order_items.get('food')
+    drinks = order_items.get('drinks')
+    print(food)
+    print(drinks)
+    print(order_items)
 
 
 # Example Call
-# assign_food_items(food='Pancakes, Poached Egg', drinks='Water')
+assign_food_items(food='Pancakes, Poached Egg', drinks='Water')
