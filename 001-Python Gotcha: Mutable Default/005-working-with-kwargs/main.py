@@ -26,11 +26,14 @@ assign_table(2, 'Douglas', True)
 print('--- tables with Douglas --- \n', tables)
 
 
-def assign_food_items(**order_items):
+def assign_food_items(table_number, **order_items):
     food = order_items.get('food')
     drinks = order_items.get('drinks')
-    # tables[table_number]['order']['food_items'] = food
-    # tables[table_number]['order']['drinks'] = drinks
+    tables[table_number]['order']['food_items'] = food
+    tables[table_number]['order']['drinks'] = drinks
 
 
 print('\n --- tables after update --- \n')
+
+assign_food_items(2, food='Seabass, Gnocchi, Pizza', drinks='Margarita, Water')
+print(tables)
