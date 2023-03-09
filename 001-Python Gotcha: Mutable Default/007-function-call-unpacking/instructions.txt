@@ -1,0 +1,11 @@
+1.
+    Looks like we are ready to give our function a test run! Luckily, table seven at Jiho’s restaurant is ready to pay.
+
+    Define a list called table_7_total that has the following values in order:
+
+    534.50 (Representing the total bill cost)
+    20.0 (Representing the tip percentage)
+    5 (Representing the number of people to split the bill for)
+
+2.
+    Using the unpacking operator, call calculate_price_per_person() with the list table_7_total.
