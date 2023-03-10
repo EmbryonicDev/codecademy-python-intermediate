@@ -48,5 +48,13 @@ test_function(calculate_driver_cost)
 # Define calculate_money_made() here
 
 
+def calculate_money_made(**trip_ids):
+    total_money_made = 0
+    for key, value in trip_ids.items():
+        trip_revenue = value.cost - value.driver.cost
+        total_money_made += trip_revenue
+    return total_money_made
+
+
 # Test the function by calling
-# test_function(calculate_money_made)
+test_function(calculate_money_made)
