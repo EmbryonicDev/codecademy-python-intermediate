@@ -62,3 +62,25 @@ def get_table_total(table_number):
 def clear_table(table_number):
     tables[table_number] = {}
     print(f"Table {table_number} has been cleared.")
+
+
+def remove_order_item(table_number, **items_to_remove):
+    ordered_food = tables[table_number]['order']['food_items'].split(", ")
+    ordered_drinks = tables[table_number]['order']['drinks'].split(", ")
+
+    food_to_cancel = items_to_remove.get('food').split(", ")
+    drinks_to_cancel = items_to_remove.get('drinks').split(", ")
+
+    for item in food_to_cancel:
+        if item in ordered_food:
+            ordered_food.remove(item)
+
+    for item in drinks_to_cancel:
+        if item in ordered_drinks:
+            ordered_drinks.remove(item)
+
+    new_food = ", ".join(ordered_food)
+    new_drinks = ", ".join(ordered_drinks)
+
+    print(f"Removing order items from table {table_number}")
+    assign_food_items(table_number, food=new_food, drinks=new_drinks)
