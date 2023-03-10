@@ -49,4 +49,4 @@ def assign_food_items(table_number, **order_items):
 def calculate_price_per_person(total, tip, split):
     total_tip = total * (tip/100)
     split_price = (total + total_tip) / split
-    print(split_price)
+    print(f"Each person needs to pay: ${split_price}")
