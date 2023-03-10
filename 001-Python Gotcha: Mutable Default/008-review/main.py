@@ -2,6 +2,7 @@ tables = {
     1: {
         'name': 'Jiho',
         'vip_status': False,
+        'reserved': True,
         'order': {
             'drinks': 'Orange Juice, Apple Juice',
             'food_items': 'Pancakes',
