@@ -57,3 +57,8 @@ def get_table_total(table_number):
     total_tip = pre_total[0] * (pre_total[1]/100)
     total = pre_total[0]+total_tip
     print(f"The total cost for table {table_number} = ${total}")
+
+
+def clear_table(table_number):
+    tables[table_number] = {}
+    print(f"Table {table_number} has been cleared.")
