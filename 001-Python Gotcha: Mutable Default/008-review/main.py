@@ -50,3 +50,10 @@ def calculate_price_per_person(total, tip, split):
     total_tip = total * (tip/100)
     split_price = (total + total_tip) / split
     print(f"Each person needs to pay: ${split_price}")
+
+
+def get_table_total(table_number):
+    pre_total = tables[table_number]['order']['total']
+    total_tip = pre_total[0] * (pre_total[1]/100)
+    total = pre_total[0]+total_tip
+    print(f"The total cost for table {table_number} = ${total}")
