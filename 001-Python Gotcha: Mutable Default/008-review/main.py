@@ -17,10 +17,24 @@ tables = {
 }
 
 
-def assign_table(table_number, name, vip_status=False):
-    tables[table_number]['name'] = name
-    tables[table_number]['vip_status'] = vip_status
-    tables[table_number]['order'] = {}
+def assign_table(table_number, name, vip_status=False, reserved=True):
+    text = ""
+    table_len = len(tables[table_number])
+    if table_len < 1:
+        tables[table_number]['name'] = name
+        tables[table_number]['vip_status'] = vip_status
+        tables[table_number]['reserved'] = reserved
+        tables[table_number]['order'] = {}
+        print(f"Table {table_number} has been assigned to {name}")
+    else:
+        if tables[table_number]['reserved']:
+            if table_len > 2:
+                text = f"Table {table_number} is currently in use. please assign a different table, or use remove_guest({table_number}) to clear the table first"
+            else:
+                text = f"Table {table_number} has been reserved, please book a different table."
+
+    frame = "-"*len(text)
+    print(f"{frame}\n{text.upper()}\n{frame}")
 
 
 def assign_food_items(table_number, **order_items):
