@@ -84,3 +84,8 @@ def remove_order_item(table_number, **items_to_remove):
 
     print(f"Removing order items from table {table_number}")
     assign_food_items(table_number, food=new_food, drinks=new_drinks)
+
+
+def reserve_table(table_number):
+    tables[table_number]['reserved'] = True
+    print(f"Table {table_number} has been reserved.")
