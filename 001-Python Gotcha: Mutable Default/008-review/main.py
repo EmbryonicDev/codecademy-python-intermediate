@@ -89,3 +89,29 @@ def remove_order_item(table_number, **items_to_remove):
 def reserve_table(table_number):
     tables[table_number]['reserved'] = True
     print(f"Table {table_number} has been reserved.")
+
+
+# Testing ##################\
+if __name__ == '__main__':
+    get_table_total(1)
+
+    calculate_price_per_person(*tables[1]['order']['total'])
+
+    assign_table(2, 'Steve')
+
+    assign_food_items(2, food='Seabass, Gnocchi, Pizza',
+                      drinks='Margarita, Water, Beer')
+
+    remove_order_item(2, food='Gnocchi', drinks='Water, Beer')
+
+    reserve_table(3)
+
+    assign_table(2, 'Sally')
+
+    assign_table(3, 'Sally')
+
+    clear_table(3)
+
+    assign_table(3, 'Sally')
+
+    print(tables)
