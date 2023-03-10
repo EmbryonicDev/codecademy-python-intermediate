@@ -43,6 +43,7 @@ def assign_food_items(table_number, **order_items):
     drinks = order_items.get('drinks')
     tables[table_number]['order']['food_items'] = food
     tables[table_number]['order']['drinks'] = drinks
+    print(f"Table {table_number}'s order has been updated.")
 
 
 def calculate_price_per_person(total, tip, split):
