@@ -1,0 +1,10 @@
+1.
+This exercise starts the same as the last with paint_gallons_available declared inside the local scope of the function, print_available(). The difference now is that paint_gallons_available is now being accessed by a for loop in the global scope. This will result in an error.
+
+Run the code to confirm the NameError on paint_gallons_available.
+
+Checkpoint 2 Passed
+2.
+Associate the paint_gallons_available declaration to the global namespace by adding a line to the top of the print_available() function.
+
+This will allow paint_gallons_available to be used within the global scope and no NameError will occur.
