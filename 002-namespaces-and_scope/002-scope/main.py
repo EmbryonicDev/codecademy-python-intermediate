@@ -6,7 +6,8 @@ def calc_paint_amount(wall_measurements):
     square_feet = 0
 
     def calc_square_feet():
-
+        nonlocal square_feet
+        square_feet = 0
         for width, height in wall_measurements:
             square_feet += width * height
 
