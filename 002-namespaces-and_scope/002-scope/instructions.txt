@@ -1,0 +1,11 @@
+
+1.
+The users of our applications have requested that we add a way of calculating the amount of paint needed for multiple rooms. To accomplish this the function calc_paint_amount() now accepts a single parameter wall_measurements which should be a list of tuples containing the width and height of each wall.
+
+The nested function calc_square_feet() has been added to iterate through the list and add up the square footage. This function is then called within calc_paint_amount().
+
+Run the code and notice the UnboundLocalError regarding the variable square_feet. Move to the next task to fix this.
+
+Checkpoint 2 Passed
+2.
+Since we need to modify square_feet in an enclosing scope, make sure to mark the variable as nonlocal in the appropriate place.
