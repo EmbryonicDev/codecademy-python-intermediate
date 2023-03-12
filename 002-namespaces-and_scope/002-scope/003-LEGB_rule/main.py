@@ -4,15 +4,16 @@ color = 'green'
 
 
 def change_color(new_color):
+    to_update = new_color
 
     global color
-    color = to_update
 
     def disp_color():
         print('The original color was: ' + color)
-        to_update = new_color
 
     disp_color()
+
+    color = to_update
 
     print('The new color is: ' + color)
 
