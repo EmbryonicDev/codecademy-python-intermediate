@@ -12,7 +12,7 @@ class Employee():
 class Admin(Employee):
     def say_id(self):
         # Write your code below:
-
+        super().say_id()
         print("I am an admin.")
 
 
