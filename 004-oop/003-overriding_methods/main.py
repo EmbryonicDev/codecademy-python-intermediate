@@ -11,6 +11,8 @@ class Employee():
 
 class Admin(Employee):
     # Write your code below
+    def say_id(self):
+        print('I am an admin')
 
 
 e1 = Employee()
