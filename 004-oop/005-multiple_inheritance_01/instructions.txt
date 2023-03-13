@@ -1,0 +1,7 @@
+1.
+Managers decide to start walking around more to let people know who is in charge.
+
+Inside script.py:
+
+Define a Manager class and have it inherit from the Admin class
+Inside the Manager class, define a method say_id() that outputs that they are in charge.
