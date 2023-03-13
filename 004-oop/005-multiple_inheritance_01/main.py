@@ -17,6 +17,14 @@ class Admin(Employee):
 # Write your code below
 
 
+class Manager(Admin):
+    def say_id(self):
+        print('I am in charge')
+        super().say_id()
+
+
 e1 = Employee()
 e2 = Employee()
 e3 = Admin()
+e4 = Manager()
+e4.say_id()
