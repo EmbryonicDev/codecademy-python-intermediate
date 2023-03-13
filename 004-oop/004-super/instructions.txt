@@ -1,0 +1,7 @@
+1.
+Once the managers found out that the admins were walking around just telling people they are admins, the managers stepped in and made them also say their ID.
+
+Inside the Admin class:
+
+Add a line that also calls the Employee class .say_id() method
+Now the output should be the admin’s ID and that they are an admin.
