@@ -5,3 +5,19 @@ Inside script.py:
 
 Define a Manager class and have it inherit from the Admin class
 Inside the Manager class, define a method say_id() that outputs that they are in charge.
+
+2.
+The Managers want to set a good example so they also let people know their ID and that they are an admin.
+
+Inside the .say_id() method of Manager:
+
+Call the Admin class .say_id() method
+
+3.
+Now test it out.
+
+At the bottom of script.py:
+
+Define a variable e4 and set it to an instance of the Manager class
+Call the .say_id() method of the instance in e4
+Now you will get output from all 3 classes.
