@@ -1,0 +1,35 @@
+1.
+To start our exploration into OOP, create a class that will represent an employee of a company.
+
+
+Define a class called Employee
+Define a class variable new_id and set it equal to 1
+Checkpoint 2 Passed
+
+2.
+Each Employee instance will need its own unique ID.
+
+Inside the Employee class:
+
+Define an __init__() method
+Inside __init__(), define self.id and set it equal to the class variable new_id
+Lastly, increment new_id by 1
+Checkpoint 3 Passed
+
+3.
+Now create a function to output the instance id.
+
+Inside the Employee class:
+
+Define a say_id() method
+Inside say_id(), output the string "My id is " and then the instance id.
+Checkpoint 4 Passed
+
+4.
+Lastly, create 2 employees and have them give their ids.
+
+Outside of the Employee class:
+
+Define the variable e1 and set it to an instance of Employee
+Define the variable e2 and set it to an instance of Employee
+Have both e1 and e2 output their ids
