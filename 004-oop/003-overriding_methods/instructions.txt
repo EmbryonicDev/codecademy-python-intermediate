@@ -1,0 +1,8 @@
+1.
+As an admin, you feel it is not important to give your ID, but just let others know they’re talking to an admin.
+
+Inside the Admin class:
+
+Define a method say_id()
+Inside the method, output "I am an Admin"
+Now when you call .say_id() with e3 you should see the .say_id() method output from Admin.
