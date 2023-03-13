@@ -1,0 +1,23 @@
+1.
+Admins in the company need access to the consumer-facing website. This means that admins must also be users of the site.
+
+The class User has been added and has the attributes username and role and the .say_user_info() method.
+
+To get the admins the user access they need:
+
+Have the Admin class inherit from the User class alongside the Employee class. Be sure to have the Employee class listed first in the Admin class definition.
+
+Stuck? Get a hint
+2.
+Now let’s make sure the admins get their user data set up.
+
+Inside the .__init__() method of the Admin class:
+
+Call the .__init__() method of the User class
+Pass the Admin class instance, id and the string "Admin" as arguments to the .__init__() method call
+
+Stuck? Get a hint
+3.
+Confirm the user data is set up correctly.
+
+Call the .say_user_info() method using the Admin instance in e3
