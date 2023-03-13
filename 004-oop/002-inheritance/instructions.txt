@@ -1,0 +1,13 @@
+1.
+Now that there is an Employee class we want to make a more specific type of employee, Admin.
+
+Create an Admin class that inherits from the Employee class
+Inside the body of the class insert the pass statement
+
+2.
+Now it’s time to test out your inheritance implementation.
+
+At the bottom of script.py:
+
+Define a variable e3 and set it to an instance of the Admin class
+Now if you call the .say_id() method of the Admin instance in e3, you will get output with the instance’s id.
