@@ -15,8 +15,9 @@ class AbstractEmployee(ABC):
 # Write your code below
 
 
-class Employee():
-    pass
+class Employee(AbstractEmployee):
+    def say_id(self):
+        print(self.id)
 
 
 e1 = Employee()
