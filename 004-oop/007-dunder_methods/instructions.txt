@@ -1,0 +1,15 @@
+1.
+There is now a Meeting class with an attendees list attribute and an .__add__() dunder method that adds Employee instances to the attendees list. Before we try and add employees to a meeting, we want to make sure we can know how many employees are in a meeting.
+
+Inside the Meeting class:
+
+Overload the len() operation by defining a __len__() dunder method
+Inside the __len__() definition, return the length of the attribute attendees
+
+Stuck? Get a hint
+2.
+Now add three employees to a meeting:
+
+Using the Meeting instance m1, add each of the employee instances e1, e2, and e3. Use one line for each employee instance.
+Output the length of meeting instance m1
+You should see the output from each employee being added and then the length of the meeting, 3.
