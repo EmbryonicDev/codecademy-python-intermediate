@@ -1,0 +1,24 @@
+1.
+The Employee class contains one attribute id. An instance variable e is defined and then passed to the function dir() which is output to the console.
+
+dir() is a built-in Python function that returns a list of all class members, including dunder methods.
+
+When you run the code, you will see a list of class members with id as the last element.
+
+
+2.
+Now add an attribute that uses the single underscore naming convention.
+
+Inside the Employee class .__init__() method:
+
+Define the single underscore variable_id and set it equal to whatever you want
+When you run the code you can see _id as the second to last element in the output list.
+
+
+3.
+Now define a variable using the double-underscore.
+
+Inside the Employee class .__init__() method:
+
+Define the double underscore variable __id and set it equal to whatever you want
+When you run the code you can see a new variable _Employee__id as the first element in the output list. This is the result of name-mangling the variable self.__id.
