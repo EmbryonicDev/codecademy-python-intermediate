@@ -20,4 +20,8 @@ class Manager(Admin):
         super().say_id()
         print("I am in charge!")
 
+
 # Write your code below
+meeting = [Employee(), Admin(), Manager()]
+for E in meeting:
+    E.say_id()
