@@ -1,15 +1,22 @@
 1.
-There is now a Meeting class with an attendees list attribute and an .__add__() dunder method that adds Employee instances to the attendees list. Before we try and add employees to a meeting, we want to make sure we can know how many employees are in a meeting.
+Take a look at the code in script.py. The abstract class AbstractEmployee is defined. It has all the logic that has previously existed in the Employee class, except that the .say_id() method is not implemented and has the @abstractmethod decorator.
 
-Inside the Meeting class:
+The Employee class currently has no implementation.
 
-Overload the len() operation by defining a __len__() dunder method
-Inside the __len__() definition, return the length of the attribute attendees
+Run the code and observe that e1.say_id() is causing an AttributeError since the Employee class has no implementation.
 
-Stuck? Get a hint
 2.
-Now add three employees to a meeting:
+Let’s fix this error:
 
-Using the Meeting instance m1, add each of the employee instances e1, e2, and e3. Use one line for each employee instance.
-Output the length of meeting instance m1
-You should see the output from each employee being added and then the length of the meeting, 3.
+Make the Employee class inherit from the AbstractEmployee class
+
+3.
+Nice work! But wait, there’s still an error!
+
+TypeError: Can't instantiate abstract class Employee with abstract methods say_id
+The .say_id() method in the AbstractEmployee class uses the @abstractmethod decorator. This means any class that inherits from AbstractEmployee must implement a .say_id() method.
+
+Inside the Employee class replace the pass statement, then:
+
+Define a say_id() method that outputs a message with self.id
+When complete you should see the output in the console.
