@@ -1,0 +1,11 @@
+1.
+A meeting needs to be scheduled with at least one employee, one admin and one manager.
+
+Define a variable meeting and set it equal to a list that contains an instance of each class, Employee(), Admin() and Manager()
+
+Stuck? Get a hint
+2.
+With the different types of employees in the meeting, have them all say their ID.
+
+Using a for loop iterate through the list meeting
+Using your defined loop variable, call the .say_id() method on each instance in the list
