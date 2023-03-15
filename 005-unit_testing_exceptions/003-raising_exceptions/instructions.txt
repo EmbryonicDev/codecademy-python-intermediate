@@ -1,0 +1,16 @@
+1.
+Instrument World has a program that attempts to print the price of several instruments. Take some time to examine the program and then run the code and observe the output!
+
+What do we expect to happen?
+
+
+2.
+We hit a KeyError since 'Piano' is not a key in the instrument_catalog dictionary.
+
+Let’s provide a custom message by raising the exception ourselves. To accomplish this goal we will use a simple conditional.
+
+First, inside of print_instrument_price, add an if statement that checks whether or not the instrument parameter is found in instrument_catalog. If it is, use the provided pre-written print statement to print the price.
+
+
+3.
+Finally, let’s add an else block where we will print our custom KeyError exception if the key does not exist. Inside, it should raise a KeyError with the message instrument + ' is not found in instrument catalog!'.
