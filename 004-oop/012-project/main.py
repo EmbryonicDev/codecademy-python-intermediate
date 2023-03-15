@@ -39,6 +39,11 @@ class Primary(School):
         return self._pickupPolicy
 
 
+class Middle(School):
+    def __init__(self, name, numberOfStudents, level='primary'):
+        School.__init__(self, name, numberOfStudents, level)
+
+
 if __name__ == "__main__":
     print(f"\nTesting class School\n")
     s1 = School('White Horse', 96, 'primary')
@@ -50,3 +55,8 @@ if __name__ == "__main__":
     print(p1)
     p1.numberOfStudents = 69
     print(p1.pickupPolicy)
+
+    print(f"\nTesting class Middle\n")
+    m1 = Middle('Middle 1', 74, 'middle')
+    print(m1)
+    m1.numberOfStudents = 86
