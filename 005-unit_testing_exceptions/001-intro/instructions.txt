@@ -1,0 +1,14 @@
+1.
+Take a look at the code in welcome.py. There is a syntax error on line 3 (the extra closing parenthesis).
+
+Will any of the previous code be executed? Press “Run” to find out.
+
+
+2.
+Fix the error from the extra closing parenthesis from line 3. Run the code to see what happens.
+
+
+3.
+We hit an exception on line 3 because of the misspelled variable name! However, the previous lines of code were executed (observe Welcome to in the output) because exceptions occur at runtime.
+
+Fix the variable name on line 3 to continue!
