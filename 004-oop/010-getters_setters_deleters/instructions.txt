@@ -1,0 +1,25 @@
+1.
+Using a getter, setter, and the single underscore naming convention, the employees of the company will now be able to use their names. The single underscore attribute _name has been added to the Employee class. Names default to None unless a string argument is passed during instantiation.
+
+Inside the Employee class:
+
+Define a getter method called get_name() that returns the class attribute _name.
+
+2.
+Add a setter method.
+
+Inside the Employee class:
+
+Define a setter method set_name that has an additional parameter for the name string and sets the class attribute _name.
+
+3.
+Lastly, Add a deleter method.
+
+Inside the Employee class:
+
+Define a deleter method del_name that deletes the attribute.
+
+4.
+Great job defining the getter and setter. Uncomment the code at the bottom of script.py to test out the getter, setter, and deleter.
+
+Move on to the next exercise to wrap up the lesson!
