@@ -7,18 +7,26 @@ class Employee():
         self._name = name
 
     # Write your code below
+    def get_name(self):
+        return self._name
+
+    def set_name(self, name):
+        self._name = name
+
+    def del_name(self):
+        del self._name
 
 
 e1 = Employee("Maisy")
 e2 = Employee()
 
 
-# e1 = Employee("Maisy")
-# e2 = Employee()
-# print(e1.get_name())
+e1 = Employee("Maisy")
+e2 = Employee()
+print(e1.get_name())
 
-# e2.set_name("Fluffy")
-# print(e2.get_name())
+e2.set_name("Fluffy")
+print(e2.get_name())
 
-# e2.del_name()
-# print(e2.get_name())
+e2.del_name()
+print(e2.get_name())
