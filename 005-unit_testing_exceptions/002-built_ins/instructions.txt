@@ -1,0 +1,21 @@
+1.
+Instrument World has a program that prints some of the most popular instruments it has on sale.
+
+Take some time to look over the program, and then run the code in instruments.py. We’ll encounter another exception that we might not have seen before. What might this exception be telling us?
+
+Checkpoint 2 Passed
+
+2.
+Take a look over traceback - it ends with the exception type and a brief message. Above that is the exact line that caused the exception.
+
+Fix this line so that the exception no longer occurs and then re-run the code.
+
+
+3.
+Looks like the exception we saw in the previous step was a TypeError. Let’s confirm which base class it is derived from.
+
+Use print() to output a TypeError.__bases__.
+
+
+4.
+There is another exception that gets hit - once again, read the traceback, fix the exception, and re-run the code.
