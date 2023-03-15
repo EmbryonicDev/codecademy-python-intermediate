@@ -49,3 +49,8 @@ class Employee(AbstractEmployee, User):
 
     def say_username(self):
         print("My username is {}".format(self.username))
+
+
+test = User()
+test.username = "Ben"
+print(test.username)
