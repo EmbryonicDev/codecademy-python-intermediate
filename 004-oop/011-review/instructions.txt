@@ -1,0 +1,1 @@
+Take a look at the code in script.py. We’ve added a complete example that aligns with the four pillars of object-oriented programming. Can you identify each one within the class interactions?
