@@ -38,6 +38,9 @@ class Primary(School):
     def pickupPolicy(self):
         return self._pickupPolicy
 
+    def __repr__(self):
+        return f"{super().__repr__()}\n{self.pickupPolicy}"
+
 
 class Middle(School):
     def __init__(self, name, level, numberOfStudents):
@@ -51,8 +54,11 @@ class High(School):
 
     @property
     def sportsTeams(self):
+        return self._sportsTeams
+
+    def __repr__(self):
         string1 = f"{self.name} has the following sports teams: "
-        string2 = ", ".join(self._sportsTeams)
+        string2 = ", ".join(self.sportsTeams)
         return ((f"{string1} {string2}").title())
 
 
@@ -66,7 +72,7 @@ if __name__ == "__main__":
     p1 = Primary('Primary 1', 'primary', 64)
     print(p1)
     p1.numberOfStudents = 69
-    print(p1.pickupPolicy)
+    print(p1)
 
     print(f"\nTesting class Middle\n")
     m1 = Middle('Middle 1', 'middle', 74)
@@ -77,4 +83,4 @@ if __name__ == "__main__":
     h1 = High('High 1', 'high', 49, ['basketball', 'tennis'])
     print(h1)
     h1.numberOfStudents = 61
-    print(h1.sportsTeams)
+    print(h1)
