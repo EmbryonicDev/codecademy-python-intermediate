@@ -44,6 +44,18 @@ class Middle(School):
         School.__init__(self, name, numberOfStudents, level)
 
 
+class High(School):
+    def __init__(self, name, numberOfStudents, level='primary', *sportsTeams):
+        School.__init__(self, name, numberOfStudents, level)
+        self._sportsTeams = list(sportsTeams)[0]
+
+    @property
+    def sportsTeams(self):
+        string1 = f"{self.name} has the following sports teams: "
+        string2 = ", ".join(self._sportsTeams)
+        return ((f"{string1} {string2}").title())
+
+
 if __name__ == "__main__":
     print(f"\nTesting class School\n")
     s1 = School('White Horse', 96, 'primary')
@@ -60,3 +72,9 @@ if __name__ == "__main__":
     m1 = Middle('Middle 1', 74, 'middle')
     print(m1)
     m1.numberOfStudents = 86
+
+    print(f"\nTesting class High\n")
+    h1 = High('High 1', 49, 'high', ['basketball', 'tennis'])
+    print(h1)
+    h1.numberOfStudents = 61
+    print(h1.sportsTeams)
