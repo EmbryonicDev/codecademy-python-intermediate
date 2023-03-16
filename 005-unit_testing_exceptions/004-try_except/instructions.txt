@@ -1,0 +1,16 @@
+1.
+Instrument World has a program that prints a staff report for all of the Instrument World locations in the staff dictionary.
+
+Take some time to review the code. Spot any issues?
+
+
+2.
+We successfully printed the staff report for Austin, but we hit an exception (ZeroDivisionError) when trying to print out the ratio for Melbourne since we attempted to divide 8 by 0.
+
+Let’s use exception handling to manage this error and keep our program running. First, wrap the function call print_staff_report() in a try clause.
+
+
+3.
+Immediately after the try clause, add an except clause which prints 'Could not print sales report for ' + location.
+
+Run the code and observe our exception handling!
