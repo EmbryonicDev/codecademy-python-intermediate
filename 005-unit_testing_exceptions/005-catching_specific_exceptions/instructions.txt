@@ -1,0 +1,8 @@
+1.
+Let’s improve upon the exception handler we built in the previous exercise.
+
+Change the except clause so that it only handles a ZeroDivisionError. Store the ZeroDivisionError we intend to capture into a variable called e.
+
+
+2.
+Print e as the second print() statement in the except block.
