@@ -1,0 +1,30 @@
+1.
+Instrument World has a program that allows the user to apply a discount to an instrument price.
+
+Take some time to look over the program. Spot any issues? Run the code to find out!
+
+
+2.
+Looks like we hit a KeyError! Let’s apply some exception handling to handle this exception!
+
+Wrap the display_discounted_price() function call in a try clause. In addition, add an except clause which handles a KeyError exception. Inside the except clause, print 'An invalid instrument was entered!'.
+
+
+3.
+Awesome! Now our program can account for any KeyError we encounter. Let’s see what happens when we use a key that does exist in our instrument_prices dictionary.
+
+Change instrument = 'Clarinet' so that instrument is equal to 'Banjo'. Before you run the code, take some time to ponder if our program will run into any error.
+
+
+4.
+We hit a TypeError!
+
+This happened because the discount variable was set to a string, not a number. Let’s adjust our exception handling to also account for a TypeError.
+
+After the exception handler for KeyError, add another except clause which catches a TypeError. Inside the except clause, print 'Discount percentage must be a number!'.
+
+
+5.
+We now have exception handlers for when we hit a KeyError or TypeError, but what if some other unexpected exception occurs?
+
+Add a final exception handler which will catch any Exception object. Inside, print 'Hit an exception other than KeyError or TypeError!'
