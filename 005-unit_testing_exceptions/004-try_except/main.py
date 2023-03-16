@@ -27,4 +27,7 @@ def print_staff_report(location, staff_dict):
 
 for location, staff in staff.items():
     # Write your code below:
-    print_staff_report(location, staff)
+    try:
+        print_staff_report(location, staff)
+    except:
+        print('Could not print sales report for ' + location)
