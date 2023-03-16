@@ -7,8 +7,11 @@ instrument_catalog = {
 
 def print_instrument_price(instrument):
     # Write your code below:
-    print('The price of a ' + instrument + ' is ' +
-          str(instrument_catalog[instrument]))
+    if instrument in instrument_catalog:
+        print('The price of a ' + instrument + ' is ' +
+              str(instrument_catalog[instrument]))
+    else:
+        raise KeyError(instrument + " is not found in instrument catalog!")
 
 
 print_instrument_price('Marimba')
