@@ -12,9 +12,15 @@ def display_discounted_price(instrument, discount):
     print("The instrument's discounted price is: " + str(discounted_price))
 
 
-instrument = 'Clarinet'
+instrument = 'Banjo'
 discount = '20'
 
 # Write your code below:
-
-display_discounted_price(instrument, discount)
+try:
+    display_discounted_price(instrument, discount)
+except KeyError:
+    print('An invalid instrument was entered!')
+except TypeError:
+    print('Discount percentage must be a number!')
+except Exception:
+    print('Hit an exception other than KeyError or TypeError!')
