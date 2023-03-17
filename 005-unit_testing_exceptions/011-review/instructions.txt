@@ -1,0 +1,2 @@
+1.
+The code in families.py prints some instruments and the instrument families they belong to. It has some bugs in it. Can you find and fix the bugs? Consider adding some exception handlers so that you can print custom error messages the next time someone runs into these bugs!
