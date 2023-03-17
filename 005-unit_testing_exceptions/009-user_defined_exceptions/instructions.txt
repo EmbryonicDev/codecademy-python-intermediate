@@ -1,0 +1,20 @@
+1.
+Instrument World has a program for submitting an online order for an instrument and then updating the inventory. Take some time to look over the current state of the program.
+
+Can we imagine any specific errors occurring? Run the code to see what happens!
+
+
+2.
+Sometimes we will receive orders that can’t be fulfilled because there is not enough inventory for a specific instrument. Let’s add some custom exception handling to the program to handle this specific situation.
+
+Create a class called InventoryError, which inherits from Exception. The body of the class should be a single pass statement.
+
+
+3.
+Now, let’s deal with the logic of capturing if an exception occurs. Inside of submit_order(), add an if statement after the supply variable is assigned.
+
+The if statement should check if quantity is greater than supply. If it is, then we want to raise our custom InventoryError exception.
+
+
+4.
+Lastly, add an else clause after the if clause, and move the remainder of the function inside of it. This will make sure we execute the rest of the function if the exception is not hit.
