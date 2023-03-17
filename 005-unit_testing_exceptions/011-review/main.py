@@ -6,8 +6,12 @@ instrument_familes = {
 
 
 def print_instrument_families():
-    for family in ['Strings', 'Percussion', 'woodwinds']:
-        print('Some instruments in the ' family + 'family are: ' + instrument_familes[family])
+    for family in ['Strings', 'Percussn', 'woodwinds']:
+        try:
+            print(
+                f"Some instruments in the {family} family are: {instrument_familes[family]}")
+        except KeyError as e:
+            print(f"Instrument family: {e} is not in my database.")
 
 
 print_instrument_families()
