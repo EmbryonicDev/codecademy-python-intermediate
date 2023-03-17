@@ -8,4 +8,4 @@ flight_statuses = {
 
 print('***Small World Air Flight Information***')
 for flight, status in flight_statuses.items():
-    print('Flight ' + flight + ' status: ' + status)
+    print(f'Flight {flight} status: {status}')
