@@ -1,0 +1,18 @@
+1.
+Our Instrument World stores have a customer rewards program. Examine the code which displays a customer’s account number. Spot any issues? Run the code to find out!
+
+
+2.
+Looks like our pesky KeyError is back! Let’s try to account for this scenario by using exception handling.
+
+Wrap rewards_number = customer_rewards[customer] inside of a try clause. Add an except clause which catches a KeyError and prints 'Customer was not found in rewards program!'.
+
+
+3.
+Lastly, add an else clause and move print('Rewards account number is: ' + str(rewards_number)) so that it is inside of the else clause.
+
+
+4.
+Change the value of the customer variable so that it is equal to 'Mario'.
+
+What we should expect from our output given our new exception handling structure? Ponder the question and then run the code to find out!
