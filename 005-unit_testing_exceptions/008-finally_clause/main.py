@@ -1,6 +1,6 @@
 import database
 
-instrument = 'Synthesizer'
+instrument = 'Kora'
 database.connect_to_database()
 
 try:
@@ -10,3 +10,5 @@ except KeyError:
 else:
     print(instrument)
 # Write your code below:
+finally:
+    database.disconnect_from_database()
