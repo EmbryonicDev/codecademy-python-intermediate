@@ -1,0 +1,12 @@
+1.
+Small World Air has a program that runs at the check-in kiosk and asks passengers for their destination airport code.
+
+Currently, Small World only flies to three destinations: Budapest (BUD), Casablanca (CMN), and Istanbul (IST). Take some time to examine the program.
+
+What should the program return for the current set destination of 'HND' (an airport in Tokyo, Japan)?
+
+
+2.
+This error wasn’t a very user-friendly experience! We also want to make sure that users are not entering destinations that Small Air World does not travel to. Let’s add an automated test using assert!
+
+Add an assert statement that checks if destination is in the destinations keys. If it isn’t, the AssertionError message should read, 'Sorry, Small World currently does not fly to this destination!'
