@@ -1,0 +1,21 @@
+1.
+First, let’s import unittest at the top of the file.
+
+
+2.
+Next, after the get_nearest_exit() function, create a class called NearestExitTests. It should inherit from unittest.TestCase.
+
+
+3.
+Refactor test_row_1(), test_row_20(), and test_row_40() so that they are methods of this class. Don’t forget to add the self argument.
+
+
+4.
+Change the assert statements in these functions so that they instead call the self.assertEqual() method with the correct arguments.
+
+
+5.
+Remove the three function calls from the bottom of the file. Replace them with a single call to unittest.main(). Observe the output of our tests!
+
+6.
+Looks like it’s the same bug from before! Fix the error in the get_nearest_exit() function. We should no longer get any failed tests when we run our script.
