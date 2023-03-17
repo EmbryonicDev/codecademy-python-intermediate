@@ -1,0 +1,10 @@
+1.
+Let’s customize the InventoryError from our previous exercise to return a custom error message. Inside the class, replace the pass statement with an __init__ method which takes two arguments: self, and supply.
+
+Inside the method, store supply into the variable self.supply.
+
+2.
+Define a __str__ method which returns, 'Available supply is only ' + str(self.supply).
+
+3.
+Modify raise InventoryError by passing in supply to the exception’s constructor method.

@@ -1,6 +1,10 @@
 # Write your code below (Checkpoint 1 & 2)
 class InventoryError(Exception):
-    pass
+    def __init__(self, supply):
+        self.supply = supply
+
+    def __str__(self):
+        return "Available supply is only " + str(self.supply)
 
 
 inventory = {
@@ -14,7 +18,7 @@ def submit_order(instrument, quantity):
     supply = inventory[instrument]
     # Write your code below (Checkpoint 3)
     if quantity > supply:
-        raise InventoryError
+        raise InventoryError(supply)
     else:
         inventory[instrument] -= quantity
         print('Successfully placed order! Remaining supply: ' +
