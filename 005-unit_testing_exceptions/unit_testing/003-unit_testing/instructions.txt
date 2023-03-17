@@ -1,0 +1,28 @@
+1.
+At Small Air World, every plane seat has a monitor which displays the nearest emergency exit.
+
+This monitor relies on a function called get_nearest_exit(), which takes a row number and then returns an exit location depending on where the row is. Let’s make sure our function is working properly by creating a unit test.
+
+Create a function called test_row_1() that will host a test case. Inside the function, assert that a call of get_nearest_exit(1) should equal to 'front', along with a message, 'The nearest exit to row 1 is in the front!'.
+
+
+2.
+Create another test case function called test_row_20().
+
+Inside the function, call get_nearest_exit(20) and assert that the return value is equal to 'middle', along with the message, 'The nearest exit to row 20 is in the middle!'
+
+
+3.
+Finally, create another test case function called test_row_40().
+
+Inside the function, call get_nearest_exit(40) and assert that the return value is equal to 'back', along with the message, 'The nearest exit to row 40 is in the back!'
+
+
+4.
+At the bottom of the file, call each of the three test functions we created. What would be the expected output?
+
+
+5.
+Looks like our tests caught a logic error in our function get_nearest_exit()! If the row number is larger than 30, we actually want to return 'back'.
+
+Adjust the function and fix the error so all of our tests pass (we should see no output).
