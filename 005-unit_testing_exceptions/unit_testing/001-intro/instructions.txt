@@ -1,0 +1,5 @@
+1.
+Small World Air provided us access to a program that displays the flight status for all current flights. Manually test the code by running it and observing the output.
+
+2.
+Uh oh, we hit a TypeError! Can you spot and fix the error? Manually test your bug fix by running the program again.
