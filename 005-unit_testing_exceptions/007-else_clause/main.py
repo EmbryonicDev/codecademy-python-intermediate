@@ -7,9 +7,13 @@ customer_rewards = {
 
 def display_rewards_account(customer):
     # Write your code below:
-    rewards_number = customer_rewards[customer]
-    print('Rewards account number is: ' + str(rewards_number))
+    try:
+        rewards_number = customer_rewards[customer]
+    except KeyError:
+        print('Customer was not found in rewards program!')
+    else:
+        print('Rewards account number is: ' + str(rewards_number))
 
 
-customer = 'Zuigly'
+customer = 'Mario'
 display_rewards_account(customer)
