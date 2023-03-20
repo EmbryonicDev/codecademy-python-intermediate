@@ -1,0 +1,37 @@
+1.
+Small World Air planes are equipped with an on-board entertainment system which we need to create some tests for. Take some time to review entertainment.py and tests.py.
+
+Note the three functions in entertainment.py:
+
+get_daily_movie(): returns the movie of the day.
+
+get_licensed_movies(): returns a list of licensed movies the plane can play.
+
+get_wifi_status(): returns the current wifi status of the plane.
+
+Note the two test cases in tests.py:
+
+test_movie_license(): is intended to test if a daily movie is licensed
+
+test_wifi_status(): is intended to test if the wifi is currently active
+
+Run the code to proceed.
+
+2.
+Every flight has a free movie. We want to create a test that checks our database to make sure that the uploaded movie has a valid license, or else we could pay some hefty fines.
+
+Inside of our test_movie_license() test method, we have two variables defined:
+
+daily_movie: which stores the value of the current free daily movie.
+licensed_movies: which stores the value of all the current licensed movies.
+To test if we have a license for the current daily movie, we need to compare if daily_movie exists inside of licensed_movies.
+
+Use the self.assertIn() assert method inside of test_movie_license() to check if the daily_movie is licensed.
+
+
+3.
+Our entertainment system also provides WiFi as a purchase option for passengers. We want to make a test that ensures the WiFi is enabled.
+
+Inside the test method called test_wifi_status() we have a variable called wifi_enabled which stores the boolean value of whether the wifi is turned on or not.
+
+Use the self.assertTrue() assert method inside of test_wifi_status() to test that wifi_enabled is True. The test should fail because currently wifi is disabled.
