@@ -1,0 +1,21 @@
+1.
+Our entertainment.py file has a function called get_maximum_display_brightness() that returns the max screen brightness value.
+
+Create a test method called test_maximum_display_brightness(). Inside the method, do the following:
+
+Call entertainment.get_maximum_display_brightness() and store the return value in a variable called brightness.
+
+Next, call self.assertAlmostEqual() to make sure that brightness is almost equal to 400.
+
+
+Stuck? Get a hint
+2.
+Our entertainment.py file has a method called entertainment.get_device_temp() that returns the current device temperature.
+
+Create a test method called test_device_temperature(). Inside the method do the following:
+
+Call entertainment.get_device_temp() and store the return value in a variable called device_temp.
+
+Then call self.assertLess() to make sure that device_temp is less than 35.
+
+The test should fail because the current temperature is 40.
