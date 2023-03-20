@@ -1,0 +1,20 @@
+1.
+Small World Air is growing and has added many more movie options to the entertainment system (we can see them inside of entertainment.py).
+
+Let’s adjust our EntertainSystemTests class to make sure they all get tested. Replace the call to entertainment.get_daily_movie() with entertainment.get_daily_movies() (our new method).
+
+Lastly, for better readability, update the variable name daily_movie to daily_movies. After updating this variable name, update the first argument in the call to self.assertIn() to use this new variable name.
+
+2.
+Under our two variables, write a for loop that iterates over daily_movies and stores each iteration value into a variable called movie. For now, let’s simply print movie on each iteration.
+
+
+3.
+Indent our self.assertIn() call to be inside the for loop and change the first argument in self.assertIn() from daily_movie to movie to represent the individual movies on each iteration of the loop.
+
+Note: Creating this structure might be okay at first glance (and may even make you wonder why we need the context manager), but if we run our test, we will see that the test will fail in the middle of our movies collection and won’t check the rest (it stops at Black Widow and not Spiral)! This is because like many testing frameworks, unittest will fail and stop on the first failure it encounters.
+
+4.
+Lastly, under our print statement of movie but before our assertIn() call, insert a self.subTest() to wrap our test method. To make sure we can distinguish test cases between each movie, pass a single argument of movie into self.subTest().
+
+Don’t forget to preface the context manager with a with statement and indent our self.assertIn() statement. Now, we can observe testing multiple movies and if they are licensed or not.
