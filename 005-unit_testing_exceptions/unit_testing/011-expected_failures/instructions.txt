@@ -1,0 +1,9 @@
+1.
+The monitors in front of passenger seats on Small World planes contain a customer feedback portal. The class CustomerFeedbackTests has tests for both the survey and the complaint form.
+
+We can find the tests in tests.py and the functions that perform feedback tasks in feedback.py. Take some time to get acquainted with the program. Run the code to move on!
+
+2.
+Looks like test_survey_form() caught a bug in the customer survey form! It’s best not to have this test fail every day while we wait for the bug to get fixed.
+
+Use the expectedFailure decorator to mark this test as an expected failure!

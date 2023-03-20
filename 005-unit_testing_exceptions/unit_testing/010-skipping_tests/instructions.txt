@@ -5,12 +5,12 @@ Let’s modify our EntertainmentSystemTests to make sure these tests get skipped
 
 It should skip the test if entertainment.regional_jet() returns True. The message should output 'Not available on regional jets'.
 
-2.
+            2.
 Add the @unittest.skipUnless decorator to test_wifi_status().
 
 It should skip the test unless entertainment.regional_jet() returns False. The message should be 'Not available on regional jets'.
 
-3.
+3.          
 Inside of test_device_temperature(), add an if statement which calls entertainment.regional_jet(). If the return value is True, then call self.skipTest() with an argument of 'Not available on regional jets'.
 
 Add the same if block to test_maximum_display_brightness().
