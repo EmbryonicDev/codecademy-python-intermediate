@@ -1,0 +1,17 @@
+1.
+In our tests.py file we have some simple tests written for the passenger check-in experience at the kiosk for Small World Air. We also have some functions we are testing written in kiosk.py.
+
+Take some time to review the provided code in both files. Run the code to continue!
+
+2.
+We want to make sure the kiosk is powered on before we run any tests. This is a great time to setup some test fixtures!
+
+Create a setUpClass() method which takes a single argument (cls) and calls kiosk.power_on_kiosk(). Add the @classmethod decorator on top of it!
+
+3.
+We don’t want to leave the kiosk powered on after all tests are run.
+
+Create a tearDownClass() method which takes a single argument (cls) and calls kiosk.power_off_kiosk(). Add the @classmethod decorator on top of it!
+
+4.
+We also want to make sure that customers are on the welcome page before each test runs. Create a method called setUp(). Inside of the method, call kiosk.return_to_welcome_page().
