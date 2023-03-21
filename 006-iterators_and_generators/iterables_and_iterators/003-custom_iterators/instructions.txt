@@ -1,0 +1,4 @@
+1.
+Try and iterate over our FishInventory class object, fish_inventory_cls, to see all the available fish we have.
+
+Create a for loop to iterate over the fish_inventory_cls object and run the code.
