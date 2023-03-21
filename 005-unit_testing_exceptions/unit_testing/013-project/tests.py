@@ -1,10 +1,12 @@
 import unittest
 import surfshop
+from datetime import datetime, timedelta
 
 
 class ShoppingCartTests(unittest.TestCase):
     def setUp(self):
         self.cart = surfshop.ShoppingCart()
+        self.today = datetime.now()
 
     def test_add_surfboards_for_multiple_inputs(self):
         for num in [2, 3, 4]:
@@ -24,6 +26,16 @@ class ShoppingCartTests(unittest.TestCase):
     def test_locals_discount(self):
         self.cart.apply_locals_discount()
         self.assertTrue(self.cart.locals_discount)
+
+    def test_past_checkout_date(self):
+        past_date = self.today - timedelta(days=3)
+        self.assertRaises(surfshop.CheckoutDateError,
+                          self.cart.set_checkout_date, past_date)
+
+    def test_future_checkout_date(self):
+        future_date = self.today + timedelta(days=3)
+        self.cart.set_checkout_date(future_date)
+        self.assertEqual(future_date, self.cart.checkout_date)
 
 
 unittest.main()
