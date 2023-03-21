@@ -1,0 +1,16 @@
+1.
+Imagine we have a custom class called CustomerCounter that counts the number of customers in the store. Make this class iterable by first defining the __iter__() method. Within this method, initialize a class member called self.count that will keep count of the number of customers in the store.
+
+2.
+Next, define the __next__() method. Only 1 customer will enter at a time each time this __next__() method is called.
+
+3.
+Create a class instance customer_counter from the CustomerCounter class.
+
+4.
+If we were to iterate through the customer_counter object using a for loop now, we would get an infinite loop since our __next__() method has not raised a StopIteration exception.
+
+Let’s fix this by moving on to Step 5 where we can raise this exception and prevent an infinite loop from occurring!
+
+5.
+Modify the __next__() method to raise a StopIteration exception when our customer count is greater than 100.
