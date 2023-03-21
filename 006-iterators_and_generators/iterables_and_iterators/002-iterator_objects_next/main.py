@@ -5,6 +5,13 @@ dog_foods = {
 }
 
 # Write your code below:
+dog_food_iterator = iter(dog_foods)
+next_dog_food1 = next(dog_food_iterator)
+next_dog_food2 = dog_food_iterator.__next__()
+next_dog_food3 = dog_food_iterator.__next__()
 
+for x in [next_dog_food1, next_dog_food2, next_dog_food3]:
+    print(x)
 
-# next(dog_food_iterator)
+# Will cause an error as there's nothing left to iterate
+next(dog_food_iterator)
