@@ -15,7 +15,7 @@ class ShoppingCartTests(unittest.TestCase):
             text = f"Successfully added {num} surfboard{suffix} to cart!"
             with self.subTest(num):
                 self.assertEqual(self.cart.add_surfboards(num),
-                                 f"Successfully added {num} surfboard{suffix} to cart!")
+                                 text)
             self.setUp()
             print('Tested adding surfboards with qty:', num)
 
