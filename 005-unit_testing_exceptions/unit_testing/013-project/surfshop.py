@@ -2,7 +2,7 @@ import datetime
 
 
 class TooManyBoardsError(Exception):
-    pass
+    print('Cart cannot have more than 4 surfboards in it!')
 
 
 class CheckoutDateError(Exception):
