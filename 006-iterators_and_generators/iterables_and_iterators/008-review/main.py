@@ -3,6 +3,9 @@
 cat_toys = [('laser', 1.99), ('fountain', 5.99),
             ('scratcher', 10.99), ('catnip', 15.99)]
 
+# Checkpoint 2
+cat_toy_iterator = iter(cat_toys)
+
 max_money = 15
 options = []
 
