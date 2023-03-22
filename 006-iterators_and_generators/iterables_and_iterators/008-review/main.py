@@ -1,4 +1,8 @@
 # Write your code below:
+# Checkpoint 4
+import itertools
+
+
 # Checkpoint 1
 cat_toys = [('laser', 1.99), ('fountain', 5.99),
             ('scratcher', 10.99), ('catnip', 15.99)]
