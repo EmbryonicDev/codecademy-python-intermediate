@@ -1,4 +1,7 @@
 # Write your code below:
+# Checkpoint 1
+cat_toys = [('laser', 1.99), ('fountain', 5.99),
+            ('scratcher', 10.99), ('catnip', 15.99)]
 
 max_money = 15
 options = []
