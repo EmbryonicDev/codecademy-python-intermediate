@@ -1,0 +1,7 @@
+1.
+We have separate lists of SKUs for each bag of dog food per brand. Obtain a master list of SKU numbers for all bags of dog food, regardless of brand.
+
+Use the chain() itertool set to a variable named all_skus_iterator to combine the SKU lists.
+
+2.
+Using all_skus_iterator implement a for loop to output each SKU.
