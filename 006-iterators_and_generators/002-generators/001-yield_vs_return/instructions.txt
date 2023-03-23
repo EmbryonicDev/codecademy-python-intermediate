@@ -1,0 +1,8 @@
+1.
+We want to create a generator that will generate values of class standings: 'Freshman', 'Sophomore', 'Junior', and 'Senior'. The generator function should be named class_standing_generator.
+
+2.
+Initialize an iterator object called class_standings from calling class_standing_generator().
+
+3.
+Use a for loop to iterate through the class_standings iterator to print out each class standing value.
