@@ -13,10 +13,19 @@ def cum_laude():
 
 
 # Checkpoint 1
+# def graduation_countdown(days):
+#     while days >= 0:
+#         yield days
+#         days -= 1
+
+# Checkpoint 3
 def graduation_countdown(days):
     while days >= 0:
-        yield days
-        days -= 1
+        days_left = yield days
+        if days_left is not None:
+            days = days_left
+        else:
+            days -= 1
 
 
 days = 25
