@@ -6,5 +6,6 @@ def student_counter():
 student_generator = student_counter()
 for student_id in student_generator:
     # Write your code below:
-
+    if student_id > 100:
+        student_generator.throw(ValueError, "Invalid student ID")
     print(student_id)
