@@ -1,0 +1,29 @@
+1.
+You are a teacher with a roster of 50 students. You have created a generator, get_student_ids(), that outputs each student’s id which you then use for assignment grading.
+
+Things to note about the code in the workspace:
+
+MAX_STUDENTS is set to 50 and is used in the while loop condition to cutoff the iteration.
+student_id is initialized to 1 and is incremented at the bottom of the while loop.
+The generator currently uses yield to return student_id at the end of each iteration.
+A for loop at the bottom of the code iterates through the generator object student_id_generator and outputs each id.
+Run the code to see all 50 ids printed.
+
+2.
+When you are interrupted while grading, you need to pick up where you left off! This requires you to start the id generation at a number higher than 1. One way to solve this problem is to change the generator to support the .send() method.
+
+Inside get_student_ids():
+
+Change the yield expression so the value from yield is assigned to n.
+Just below the yield expression check that n is not equal to None. If they are not equal, assign the value of n to student_id.
+Still inside the if statement, stop student_id from incrementing by skipping the rest of the iteration.
+When you run the code, you should see no change.
+
+3.
+To start the iteration at a different id, you want to send the generator a new value during the first iteration.
+
+Inside the for loop and before print(i):
+
+Check if i is equal to the first id number, 1.
+If so, set i to the return value of the student_id_generator.send() method.
+Set the argument for the .send() method so the output starts at 25.
