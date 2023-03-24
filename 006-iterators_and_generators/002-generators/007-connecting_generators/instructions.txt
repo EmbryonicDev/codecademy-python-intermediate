@@ -1,0 +1,10 @@
+1.
+We have a generator function called science students(x) that yields science major students with student IDs 1 to x. We have another generator function, non_science_students(x,y), that yields non-science major students with student IDs x-y. We want to retrieve student ids in the following order:
+
+Science students with IDs 1-5
+Non-science students with IDs 10-15
+Non-science students with IDs 25-30
+Use a connected generator function called combined_students that uses yield from statements to achieve this.
+
+2.
+Call the combined_students() combined generator function and set it to a variable named student_generator. Print out the results using a for loop.
