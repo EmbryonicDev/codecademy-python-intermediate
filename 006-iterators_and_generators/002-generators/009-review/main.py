@@ -33,3 +33,6 @@ gpas = [3.2, 4.0, 3.6, 2.9]
 
 # Checkpoint 2
 countdown_generator = (day for day in range(days, -1, -1))
+for x in countdown_generator:
+    print(x)
+
