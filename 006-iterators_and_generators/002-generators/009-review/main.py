@@ -41,6 +41,7 @@ grad_days = graduation_countdown(days)
 for x in grad_days:
     if x == 15:
         grad_days.send(10)
+
 # Checkpoint 5
     elif x == 3:
         grad_days.close()
@@ -59,3 +60,8 @@ def honors_generator(gpas):
         elif x > 3.5:
             yield from cum_laude()
 
+
+# Checkpoint 7
+honors = honors_generator(gpas)
+for x in honors:
+    print(x)
