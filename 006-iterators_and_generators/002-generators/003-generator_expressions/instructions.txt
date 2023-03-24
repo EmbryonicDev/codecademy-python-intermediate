@@ -1,0 +1,8 @@
+1.
+Given the defined generator function cs_generator(), retrieve a generator object by calling cs_generator() and set it to a variable called cs_courses. Print out the values within the iterator using a for loop.
+
+2.
+After the for loop, create an iterator using a generator expression and put it in a variable called cs_generator_exp. The iterator should produce the same output as cs_generator().
+
+3.
+Print out the values of the cs_generator_exp iterator object using a for loop. The output should match the for loop print output of iterating over cs_courses.
