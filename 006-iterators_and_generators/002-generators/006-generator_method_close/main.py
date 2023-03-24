@@ -7,3 +7,5 @@ student_generator = student_counter()
 for student_id in student_generator:
     print(student_id)
     # Write your code below:
+    if student_id == 100:
+        student_generator.close()
