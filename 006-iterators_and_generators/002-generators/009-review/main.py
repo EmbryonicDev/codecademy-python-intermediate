@@ -36,3 +36,13 @@ countdown_generator = (day for day in range(days, -1, -1))
 for x in countdown_generator:
     print(x)
 
+# Checkpoint 4
+grad_days = graduation_countdown(days)
+for x in grad_days:
+    if x == 15:
+        grad_days.send(10)
+# Checkpoint 5
+    elif x == 3:
+        grad_days.close()
+
+    print('Days Left:', x)
