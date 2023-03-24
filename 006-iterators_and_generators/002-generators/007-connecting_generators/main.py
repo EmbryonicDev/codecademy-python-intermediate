@@ -8,3 +8,14 @@ def non_science_students(x, y):
         yield i
 
 # Write your code below
+
+
+def combined_students():
+    yield from science_students(5)
+    yield from non_science_students(10, 15)
+    yield from non_science_students(25, 30)
+
+
+student_generator = combined_students()
+for x in student_generator:
+    print(x)
