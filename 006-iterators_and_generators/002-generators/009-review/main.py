@@ -46,3 +46,16 @@ for x in grad_days:
         grad_days.close()
 
     print('Days Left:', x)
+
+# Checkpoint 6
+
+
+def honors_generator(gpas):
+    for x in gpas:
+        if x > 3.9:
+            yield from summa()
+        elif x > 3.7:
+            yield from magna()
+        elif x > 3.5:
+            yield from cum_laude()
+
