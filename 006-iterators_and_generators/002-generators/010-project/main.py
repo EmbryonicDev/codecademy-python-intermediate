@@ -17,7 +17,7 @@ def read_guestlist(file_name):
 # Checkpoint 1   
 guest_list_generator = read_guestlist('guest_list.txt')
 for i in range(10):
-        print(f"{i+1}: {next(guest_list)}")
+        print(f"{i+1}: {next(guest_list_generator)}")
         
 # Checkpoint 2
 guest_list_generator.send('Jane,35')
