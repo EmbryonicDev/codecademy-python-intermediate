@@ -21,3 +21,12 @@ for i in range(10):
         
 # Checkpoint 2
 guest_list_generator.send('Jane,35')
+
+# Checkpoint 3
+for i in guest_list_generator:
+    print(i)
+    
+# Checkpoint 4
+over_21 = (name for name,age in guests.items() if age >= 21)
+for name in over_21:
+    print(name,"is 21 or older")
