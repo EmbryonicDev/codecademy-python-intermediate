@@ -1,0 +1,12 @@
+1.
+In our application, we have a section for upcoming artists to upload their own music. When uploading songs, the artists add their own tags, but other users can add tags to the songs later on.
+
+For this version of the app, we are provided a song_data dictionary as well as a few tags from users in the form of strings.
+
+For the first step, create a new set called tag_set from the original song’s tags located in song_data.
+
+2.
+Next, add the three user tag strings to tag_set.
+
+3.
+Finally, update song_data so that the value of the key, 'Retro Words' is equal to the updated tag set.
