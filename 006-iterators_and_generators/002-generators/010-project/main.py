@@ -1,3 +1,5 @@
+import random
+
 guests = {}
 
 
@@ -31,3 +33,24 @@ print(f"\nCheckpoint 4")
 over_21 = (name for name, age in guests.items() if age >= 21)
 for name in over_21:
     print(name, "is 21 or older")
+
+
+print(f"\nCheckpoint 5")
+
+
+def table_generator(table_num):
+    foods = ['Chicken', 'Beef', 'Fish']
+    for i in range(1, 6):
+        yield (random.choice(foods), f'Table {table_num}', f'Seat {i}')
+
+
+table_1 = table_generator(1)
+table_2 = table_generator(2)
+table_3 = table_generator(3)
+
+for i in range(5):
+    print(next(table_1))
+for i in range(5):
+    print(next(table_2))
+for i in range(5):
+    print(next(table_3))
