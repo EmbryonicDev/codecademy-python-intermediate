@@ -54,3 +54,40 @@ for i in range(5):
     print(next(table_2))
 for i in range(5):
     print(next(table_3))
+
+# Checkpoint 6
+
+print(f"\nCheckpoint 6")
+table_1 = table_generator(1)
+table_2 = table_generator(2)
+table_3 = table_generator(3)
+guests_1 = list(guests.items())[0:5]
+guests_2 = list(guests.items())[6:11]
+guests_3 = list(guests.items())[11:]
+
+
+def assign_table(guest_list: dict, table):
+    for guest in guest_list:
+        yield (guest[0], next(table))
+
+
+def get_guest_table_data(guest_list, table):
+    print()
+    count = 0
+    for guest, table_data in assign_table(guest_list, table):
+        # prints once per table
+        if count == 0:
+            string = f"{len(guest_list)} people are sitting at {table_data[1]}".title(
+            )
+            decor = '=*'*int(len(string)/2*1.04)
+            print(f"{string}\n{decor}")
+            count = 1
+        # print data for each guest
+        print(
+            (f"{guest} ordered the {table_data[0]} dish & will be sitting at {table_data[1]}, {table_data[2]} ").title())
+
+
+guests_and_tables = [(guests_1, table_1), (guests_2,
+                                           table_2), (guests_3, table_3)]
+for guest, table in guests_and_tables:
+    get_guest_table_data(guest, table)
