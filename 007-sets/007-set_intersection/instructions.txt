@@ -1,0 +1,10 @@
+First, create a variable called tags_int that stores the intersection between the tags for the user_recent_songs two recent songs 'Retro Words' and 'Lowkey Space'. Remember to convert each list into a set to perform the operation.
+
+We will be using these common tags as a basis for finding a recommended song in song_data.
+
+2.
+Now, let’s find the recommended songs based on the common tags we found in the previous step.
+
+Find all other songs in song_data which have these tags. Store the songs which have any matching tags into a dictionary called recommended_songs. Make sure that you do not add any songs which the user has listened to recently!
+
+Print recommended_songs to see the result!
