@@ -1,0 +1,21 @@
+1.
+Now that we have learned about using the in keyword for set containers, we have decided to update the tagging system by automatically removing unrelated tags.
+
+Our team members are working on a CSV file containing all allowed keywords, but for now, we will be using a list of allowed words when programming your logic.
+
+To start, store the tag data from song_data_users into a set called tag_set.
+
+2.
+Next, we want to capture all of the tags in tag_set that don’t belong.
+
+Create a list called bad_tags. Then, iterate through each element of tag_set, adding tags to bad_tags that don’t belong.
+
+3.
+Now, let’s remove all the incorrect tags from tag_set.
+
+Using the collected bad_tags, write another loop to iterate over each of the tags in bad_tags, and remove the elements from tag_set so we have only the allowed tags.
+
+4.
+Finally, replace the value of the key, 'Retro Words' inside of song_data_users so that it is equal to the updated tag set.
+
+Print song_data_users to see the result.
