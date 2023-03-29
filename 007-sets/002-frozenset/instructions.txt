@@ -1,0 +1,4 @@
+1.
+After calculating the results for the top music genres from the survey, your teammates have sent you a list containing the top three results.
+
+In order to preserve this data and prevent it from being modified, create a frozenset called frozen_top_genres from the top_genres data. Print our frozen_top_genres to see it!
