@@ -1,0 +1,12 @@
+1.
+Some users have created tags that are not related to music, and you’d like to get rid of them. For now, let’s manually remove the incorrect tags.
+
+To start off, we need another set for the tag data within song_data_users. Create a set called tag_set and store the tag data for 'Retro Words'.
+
+2.
+Now we need to remove the tags which are unrelated to music. In this case, remove the tags: 'onion', 'helloworld', and 'spam'.
+
+3.
+For the last step, replace the value of the key, 'Retro Words' inside of song_data_users so that it is equal to the updated tag set.
+
+Print song_data_users to see the results.
