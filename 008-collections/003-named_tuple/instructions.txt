@@ -1,0 +1,23 @@
+1.
+We want to continue building out our clothing store application. We want a standardized way to store clothing type, color, size, and price. To do this, we can use a namedtuple!
+
+Import the container and create a namedtuple subclass called ClothingItem with a typename of 'ClothingItem' and the field_name consisting of: 'type', 'color', 'size', and 'price' in that specific order.
+
+2.
+Let’s test out our new ClothingItem namedtuple subclass!
+
+For this checkpoint, create a new object from the subclass ClothingItem called new_coat.
+
+The new_coat should have a type of 'coat', a color of 'black', a size of 'small', and a price of 14.99.
+
+3.
+Now that the new_coat object has been created, access the price of this namedtuple object and store it in a variable called coat_cost.
+
+4.
+There is too much manual work when creating the namedtuple objects one at a time, so lets use a loop!
+
+We have a list of tuples containing clothing information called clothes.
+
+First, create a new empty list called updated_clothes_data and then for every piece of clothes data in the list of tuples, append a new ClothingItem object to updated_clothes_data while passing the data from the tuple into the new ClothingItem object.
+
+Print out updated_clothes_data to see the result!
