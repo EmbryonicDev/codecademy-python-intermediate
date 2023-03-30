@@ -1,0 +1,13 @@
+1.
+Our business has been doing well over the past year and we have been provided with a list of dictionaries representing the amount of profit per month as well as additional profit from holidays when applicable. We want an easy way to monitor our profit over the most recent 12 month period. To do this, we can use the ChainMap class. This will allow us to conserve historical data while also allowing us to retrieve the most recent data. It will even allow us to work with additional keys within dictionary updates.
+
+First, remember to import ChainMap. Then create a new ChainMap called profit_map using the year_profit_data list. Remember that a ChainMap accepts a variable number of arguments so we need to expand the list (*) so the constructor will read them as individual arguments instead of one single argument.
+
+2.
+For the next step, we need logic which will be able to calculate the normal profits and the holiday profits separately. Create a function called get_profits which calculates the sum of the standard profits (keys not containing 'holiday') and the holiday profits (keys containing 'holiday') in two different variables. Make this function return the two variables: the standard profit first and the holiday profit second. Additionally, call the function using the profit_map and store the results in variables called last_year_standard_profit and last_year_holiday_profit.
+
+3.
+It has been three months and our accountant has sent three more months worth of profit data in the form of a list of dictionaries called new_months_data. Add the new mappings to the profit_map so that the old January - March months are still in the ChainMap, but accessing those keys will return data for the most recent three months. Call the get_profits function on the profit_map again and store the results in current_year_standard_profit and current_year_holiday_profit to calculate the sum of the most recent 12 months of profit data.
+
+4.
+Finally, we want to take a look at the difference in the last 12 month period compared to the current 12 month period. Calculate the difference for the standard and holiday profits and store them in variables called year_diff_standard_profit and year_diff_holiday_profit. Print out the results to see the difference in profit for the current 12 month period.
