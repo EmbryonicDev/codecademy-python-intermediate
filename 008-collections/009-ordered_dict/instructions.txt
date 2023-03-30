@@ -1,0 +1,16 @@
+1.
+We want to add some logic to our application which will organize orders by their status. A list of orders is provided which includes the order number and the status. The status of an order can be purchased, returned, or canceled. To make things more organized, we want to remove the canceled orders and push the returned orders to the end. In order to do this, we can use an OrderedDict!
+
+For this first checkpoint, import the OrderedDict class and create a new object from that class called orders. Use the constructor to automatically convert the order_data into an OrderedDict.
+
+2.
+We need to keep track of which orders to remove and which ones to push back. To do this, create two new lists called to_move and to_remove. Iterate through each item in orders and check what the status is. If the status is 'returned' then add the key (order number string) to the to_move list. Otherwise, if the status is 'canceled' then add it to the to_remove list.
+
+3.
+Now that we have the list of items to remove from orders, for every item in the to_remove list, .pop() the element from orders.
+
+4.
+Now that all of the canceled orders have been removed, use another loop to push back any of the 'returned' orders from to_move to the end of orders. This will be similar to the last step, but this time we are using the .move_to_end() method.
+
+5.
+Finally, use print to output the orders to the console!
