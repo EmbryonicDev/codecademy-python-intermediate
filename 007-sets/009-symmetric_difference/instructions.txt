@@ -1,0 +1,14 @@
+1.
+The users of our app would like to be able to see which tags are unique between them and their friends. This means that the tags which are not shared between the user and their friend are shown. In order to find this, we can use the symmetric difference.
+
+First, create a set called user_tags.
+
+Use a loop to populate the set to contain all of the tags from the songs in user_song_history.
+
+2.
+Next, repeat the same logic in order to collect all of the tags from the friend_song_history and store it in a set called friend_tags.
+
+3.
+Finally, find the unique tags by getting the symmetric difference between user_tags and friend_tags.
+
+Store the result in a set called unique_tags and then print it!
