@@ -1,0 +1,15 @@
+1.
+We’ve decided to make an application in Python to help our friend’s clothing company. To begin, let’s use some of Python’s built-in containers to set up our company info!
+
+First, create a variable called company_name which contains a string representing our clothing company’s name. Come up with something creative!
+
+2.
+Next, create a tuple called company_location which contains two decimal values for latitude and longitude. Feel free to use any coordinates.
+
+3.
+Create a list of strings called company_products representing which products we will be selling in our store. Make sure there are at least 5 products.
+
+4.
+Finally, create a dictionary that will store all of the previous values we created into a variable called company_data.
+
+Use the keys name, location, and products with the values being the respective variables we created in the last steps.
