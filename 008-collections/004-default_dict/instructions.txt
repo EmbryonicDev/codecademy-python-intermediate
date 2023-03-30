@@ -1,0 +1,18 @@
+1.
+We are updating an old version of our website to include new products that we have for sale. We have a dictionary of all of the previous products and locations on our site. The team has provided a list of all products our company sells including the new additions which are randomly placed within the list. Use a defaultdict to validate which products are on the site and to automatically label those which are missing. For products which are missing, their values should default to 'TODO: Add to website'.
+
+For this first checkpoint, import the defaultdict class from the collections module and create a new variable called validated_locations. Use the defaultdict constructor to create a new defaultdict object in validated_locations which defaults missing keys to have a value of 'TODO: Add to website'.
+
+2.
+Not only can we create a defaultdict from scratch, but we can also create one from an existing dictionary. To do this, we can use the .update() method from the defaultdict class. This behaves the same way as the .update() method from the dict class.
+
+Take a look at the Python documentation for a refresher on the .update() method.
+
+site_locations represents where each product exists on the clothing store website.
+
+Use the .update() method to move all of the site_location data into validated_locations.
+
+3.
+We need to update the original dictionary with the new information. Iterate through every item in the updated_products list and update the site_locations dictionary with the values from validated_locations.
+
+print out site_locations to see the result!
