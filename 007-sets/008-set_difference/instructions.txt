@@ -1,0 +1,11 @@
+1.
+In order to try and increase the accuracy of your app’s song recommendations, we have decided to add some logic that will find the differences between liked and disliked songs. We will create another recommended dictionary of songs based on these differences.
+
+Create a new variable called tag_diff that is the set difference between the tags inside of the one song of user_liked_song and the one song of user_disliked_song. Don’t forget to convert the list of tags into a set to perform this operation!
+
+2.
+Now that you know the difference in tags between the liked song and disliked song, use those tags to find any songs from song_data which contain them.
+
+Make sure not to include the liked and disliked songs. Store the newly found songs into a dictionary called recommended_songs.
+
+Print recommended_songs to see the result!
