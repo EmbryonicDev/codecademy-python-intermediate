@@ -1,0 +1,5 @@
+.
+Now, let’s try creating a custom list class using UserList. Create a new class called ListSorter which inherits from the UserList class. Inside of this class, overwrite the .append() method to sort the list after appending the value to it.
+
+2.
+Now that we have created our own list class, try creating an object using it’s constructor. Create an object called sorted_list and pass data into the ListSorter constructor. Afterwards, append the value 2 to the new object and print out the results.
