@@ -1,0 +1,5 @@
+1.
+Let’s create a new string class using UserString. Import the UserString class and create a new class called SubtractString which inherits from it. In this class, overwrite the - operator to remove the string on the right side of the operator from the string stored in the object. Another way to think about this is to replace the substring on the right side of the operator with an empty string.
+
+2.
+Now that we have created our new string class, create a new object from that class called subtract_string while passing str_name in as the argument to the constructor. Next, use the - operator to subtract the substring str_word from subtract_string.
