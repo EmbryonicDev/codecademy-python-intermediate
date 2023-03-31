@@ -1,0 +1,5 @@
+1.
+Let’s try creating a new dictionary which is able to clear orders which are already processed when the method .clean_orders() is called. Import the UserDict class and create a new class which inherits from it called OrderProcessingDict. The .clean_orders() method should search for any keys called ‘order_status’ and if value is equal to 'complete', remove the entire order from the dictionary.
+
+2.
+Now that you have created your own class, try creating an instance of it called process_dict while passing data into the constructor. Afterwards, call the .clean_orders() method to automatically clean the orders inside. You can also print your custom dictionary to see the results.
