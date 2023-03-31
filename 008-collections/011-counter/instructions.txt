@@ -1,0 +1,28 @@
+1.
+We have decided to add some more logic to our clothing store application to automatically calculate how much of each product has been sold based on our inventory at the start of the day vs the end of the day.
+
+First, let’s define a function called find_amount_sold. Our function will need three parameters: opening, closing, and item. For now, inside of the function, simply add the keyword return. Also, don’t forget to import the Counter class as we will be using it throughout the checkpoints.
+
+2.
+At this point, we could create two loops to meticulously count every item in each list, but instead, let’s create two Counter objects to calculate a count of items in our opening and closing inventory.
+
+Inside of our new function, and before it returns, create a variable called opening_count and store a Counter object passing in the opening parameter as the counter’s input.
+
+Then, create a variable called closing_count which stores a Counter object and passes in the closing parameter into the Counter.
+
+3.
+Next, we’ll have to subtract the closing counted data from the opening counted data in order to get the amount sold for every item. Luckily, the Counter container has a method that allows us to accomplish this really easily.
+
+Take a look at the Python documentation for the .subtract() method.
+
+When you are ready, call the .subtract() method on opening_count and pass in closing_count as the first argument.
+
+4.
+Awesome! Now we have our Counter object with the difference in item inventory. You may have noticed earlier we defined a parameter named item in our function declaration. This is because the goal of our function is to return the difference in inventory for a specific item rather than all of them!
+
+Using the parameter item, access the item’s inventory from the opening_count Counter object and return it.
+
+5.
+Finally, let’s test out your function by calling it with opening_inventory as the first argument, closing_inventory as the second argument, and t-shirt as the third argument.
+
+Store the result in a variable called tshirts_sold and then use print() to display it!
