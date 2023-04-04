@@ -11,13 +11,19 @@ class PoemFiles:
         return self.opened_poem_file
 
     # Create your __exit__ method here:
+    def __exit__(self, exc_type, exc_value, traceback):
+        print(exc_type)
+        print(exc_value)
+        print(traceback)
+        self.opened_poem_file.close()
+
 
 # First
 # with PoemFiles('poem.txt', 'r') as file:
-#   print("---- Exception data below ----")
-#   print(file.uppercasewords())
+#     print("---- Exception data below ----")
+#     print(file.uppercasewords())
 
 # Second
-# with PoemFiles('poem.txt', 'r') as file2:
-#   print(file2.read())
-#   print("---- Exception data below ----")
+with PoemFiles('poem.txt', 'r') as file2:
+    print(file2.read())
+    print("---- Exception data below ----")
