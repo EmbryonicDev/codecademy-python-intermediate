@@ -1,0 +1,11 @@
+1.
+Let’s return to our poem context manager. This time, we want to start transferring poems from a poem.txt file to a card.txt file. We plan to create some poem greeting cards for all our friends!
+
+Write a nested context manager that uses the poem_files context manager to open poem.txt in read mode and saves it to a variable called poem
+
+Nested inside, use the card_files context manager to open the card.txt file in write mode and saves it to a variable called card.
+
+Print poem and card to confirm we can access both files.
+
+2.
+Finally, inside of our nested context managers, and under our print statements, write to card.txt the contents of poem.txt.
