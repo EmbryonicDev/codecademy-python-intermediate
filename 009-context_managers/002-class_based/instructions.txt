@@ -1,0 +1,18 @@
+1.
+Let’s create a context manager that will work with files filled with creative poems. While we won’t directly work with a file in this exercise, make sure to note the order of method execution in a context manager. Don’t worry, we’ll work with an actual file soon! For now, we are just going to get comfortable with the basics.
+
+Create a class called PoemFiles. For now, give it a single pass statement so it won’t create an error when run.
+
+2.
+Next, remove the pass statement and create an __init__ method inside of the PoemFiles class that prints 'Creating Poems!'
+
+3.
+Let’s implement the __enter__ method. Have the method print 'Opening poem file'.
+
+4.
+Lastly, create an __exit__ method that prints 'Closing poem file'.
+
+5.
+Awesome! Now we have our very own context manager! Let’s see it in action by calling it with a with statement.
+
+Have the with statement save the invoked class to a variable called manager and have it print a famous line from the poet Emily Dickinson: 'Hope is the thing with feathers'.
