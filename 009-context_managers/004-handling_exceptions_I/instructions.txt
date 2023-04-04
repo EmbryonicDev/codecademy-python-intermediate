@@ -1,0 +1,21 @@
+1.
+Let’s return to our trusty PoemFiles context manager. Unfortunately, it’s missing an __exit__ method. Now that we have seen how to set up the method to capture exception data, let’s build it out.
+
+Create an __exit__ method, and add the 4 necessary arguments: self, exc_type, exc_value, traceback. Have the method use 3 different print statements to print each exception argument. This will help us visualize the exceptions when we run into them!
+
+2.
+As the last part of our __exit__ method, use the .close() built-in function to close the opened_poem_file property.
+
+3.
+Looks like our context manager is complete. Time to see it in action!
+
+Uncomment the first (marked #First) commented out with call that attempts to print the contents of our poem.txt file in all uppercase.
+
+Run the code and observe the exception data that comes up! Can you spot the error?
+
+4.
+Looks like we ran into a small error in the last step! In particular, we ran into an AttributeError because .uppercasewords() isn’t a real method.
+
+Now let’s see what happens in our program when we don’t run into an error. Comment out the first with statement we just ran and uncomment the second one (marked # Second).
+
+Run the code and observe the exception data that comes up! In the next exercises, we’ll learn how to customize our exception handling to better work with errors that appear in our code.
