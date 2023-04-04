@@ -1,0 +1,7 @@
+1.
+Let’s add an except clause to the poem_files context manager so that it catches an AttributeError exception, saves it as a variable called e.
+
+Print e inside of the except block.
+
+2.
+Let’s see our exception handling in action! Uncomment the with statement block and run code.
